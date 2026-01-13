@@ -17,24 +17,9 @@ Fidelity Options Tracker is a browser extension that helps you analyze your opti
 
 ## What the Extension Accesses Locally
 
-The extension reads the following data from your Fidelity Activity & Orders page to display in your local dashboard:
+The extension accesses **ONLY** the order history and active orders from the Fidelity Activity & Orders page. Nothing else.
 
-- Trade dates
-- Option symbols (ticker, strike, expiry, type)
-- Trade actions (buy/sell, open/close)
-- Quantities and prices
-- Commissions and fees
-- Order status
-
-This data is accessed only when you visit the Fidelity Activity page and is stored locally in your browser using Chrome's storage API. **It never leaves your device.**
-
-## What the Extension Does NOT Access
-
-- Account numbers or balances
-- Personal identification information
-- Login credentials
-- Social security numbers
-- Any data from pages other than Activity & Orders
+This data is stored locally in your browser using Chrome's storage API. **It never leaves your device.**
 
 ## Local Storage Only
 
