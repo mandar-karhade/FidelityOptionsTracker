@@ -6,7 +6,7 @@
 
 Fidelity Options Tracker is a browser extension that helps you analyze your options trading activity. **We do not collect any data.** All processing happens locally in your browser.
 
-## No Data Collection
+## Local Storage Only
 
 **This extension does not collect, transmit, or store any data on external servers.**
 
@@ -14,6 +14,7 @@ Fidelity Options Tracker is a browser extension that helps you analyze your opti
 - No telemetry
 - No tracking
 - No data leaves your browser
+- Uninstalling the extension removes all stored data
 
 ## What the Extension Accesses Locally
 
@@ -27,13 +28,6 @@ This includes:
 - Commissions and fees
 
 This data is stored locally in your browser using Chrome's storage API. **It never leaves your device.**
-
-## Local Storage Only
-
-- All data stays in your browser's local storage
-- Data is not synced across devices
-- Data is not backed up to any cloud service
-- Uninstalling the extension removes all stored data
 
 ## No External Communication
 
