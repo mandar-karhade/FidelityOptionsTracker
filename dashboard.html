@@ -56,6 +56,7 @@
             border-radius: 8px;
             padding: 20px;
             border: 1px solid #2a2a2a;
+            min-width: 0;
         }
         .chart-title {
             font-size: 13px;
@@ -73,6 +74,7 @@
             border-radius: 8px;
             padding: 20px;
             border: 1px solid #2a2a2a;
+            min-width: 0;
         }
         .stats-title {
             font-size: 13px;
@@ -196,9 +198,16 @@
             padding: 60px;
             color: #666;
         }
-        @media (max-width: 900px) {
+        @media (max-width: 1200px) {
             .summary-cards { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 900px) {
+            .summary-cards { grid-template-columns: repeat(2, 1fr); }
             .charts-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .summary-cards { grid-template-columns: 1fr; }
+            .table-controls { flex-direction: column; align-items: flex-start; gap: 12px; }
         }
     </style>
 </head>
