@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Fidelity Trade Exporter",
+  "version": "1.0",
+  "description": "Exports Fidelity trade activity to CSV.",
+  "permissions": ["storage", "scripting", "tabs"],
+  "host_permissions": ["https://digital.fidelity.com/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": ["https://digital.fidelity.com/*"]
+    },
+    {
+      "resources": ["chart.min.js", "dashboard.html", "dashboard.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://digital.fidelity.com/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
